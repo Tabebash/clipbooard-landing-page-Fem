@@ -1,0 +1,323 @@
+
+/* || RESET|| */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*|| ROOT STYLES ||*/
+
+:root {
+
+    /* Colors Variable */
+    --STRONG-CYAN: hsl(171, 66%, 44%);
+    --LITE-BLUE: hsl(233, 100%, 69%);
+    --GRAY-BLUE-DRK: hsl(210, 10%, 33%);
+    --GRAY-BLUE-LITE: hsl(201, 11%, 66%);
+}
+
+
+/* || GENERAL STYLES || */
+section {
+    padding: 15px;
+    margin-bottom: 175px;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+p {
+    color:var(--GRAY-BLUE-LITE);
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 0px;
+    color:var(--GRAY-BLUE-DRK);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* || SECTION ONE STYLE || */
+
+.one {
+    background: url('./images/bg-header-mobile.png') no-repeat center / cover;
+    text-align: center;
+    padding-top: 70px;
+}
+
+
+/* Logo */
+.heading-logo {
+    margin: 60px 0;
+}
+
+
+/* buttons */
+.header-btn {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-btn button {
+    padding: 15px 10px;
+    color: #fff;
+    border: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.iOS-btn {
+    background-color: var(--STRONG-CYAN);
+    box-shadow:0px 5px 15px hsl(171, 66%, 44%, 0.5),  0px 2px 0px 1px hsla(171, 81%, 23%, 0.801);
+}
+.Mac-btn {
+    background-color: var(--LITE-BLUE);
+    box-shadow:0px 5px 15px hsl(233, 100%, 69%, 0.5),  0px 2px 0px 1px hsla(233, 57%, 37%, 0.8);
+    margin-top: 25px;
+}
+
+
+/* || section two || */
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+}
+
+.snippet  img {
+    margin: 70px 0px;
+}
+
+/* || section three || */
+
+.three {
+    margin-bottom: 100px;
+}
+
+/* || section four|| */
+
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 85px;
+}
+
+.tools-container h3 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.four {
+    margin-bottom: 50px;
+}
+
+/* || section five */
+
+.affiliate-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.affiliate-images img {
+    width: 40%;
+    margin: 70px auto;
+}
+
+/* || section six */
+
+.six h2 {
+    font-size: 1.875rem;
+}
+
+
+/* || footer || */
+
+footer {
+    background-color: hsla(0, 0%, 96%, 0.849);
+    text-align: center;
+}
+
+.my-footer svg {
+        display: inline-block;
+        margin-left: 20%;
+}
+
+.footer-links {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--GRAY-BLUE-DRK);
+    font-size: 16px;
+}
+
+.socials {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.socials svg {
+    margin-left: 30px;
+}
+
+/* || SESKTOP SCREEN */
+@media only screen  and (min-width: 768px){
+
+    /* || general styles */
+    .global-container {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    /* || section one */
+
+    .one {
+        background: url('./images/bg-header-desktop.png') no-repeat center / cover;
+    }
+
+    .header-btn {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-btn button {
+        width: 33%;
+        font-size: 16px;
+        letter-spacing: 0px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .Mac-btn {
+        margin-top: 0;
+    }
+    .Mac-btn:hover, .iOS-btn:hover {
+        opacity: 0.7;
+    }
+
+    /*  || section two */
+
+    .snippet {
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .snippet div {
+        align-self: center;
+    }
+
+    .snippet div p, .snippet div h3 {
+        text-align: left;
+    }
+
+    /* || section three */
+
+   .device-img {
+    width: 800px;
+    margin: 0 auto;
+   }
+
+   /* || section four */
+
+   .tools-container {
+    flex-direction: row;
+    gap: 27px;
+    justify-content: center;
+     align-items: baseline;
+   }
+
+   .tools-container .tool {
+    width: 27%;
+   }
+
+   /* || section five */
+
+   .affiliate-images {
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+    gap: 45px;
+    justify-content: space-between;
+   }
+
+   .affiliate-images img {
+    display: inline;
+    width: auto;
+    height: 45px;
+   }
+
+   /* || footer */
+
+   .my-footer {
+    display: flex;
+    justify-content: flex-start;
+   }
+
+   .my-footer svg {
+    margin-left: 0;
+    margin: 0 10%;
+   }
+
+   .footer-links {
+    align-content: center;
+    flex-flow: row wrap;
+    width: 40%;
+    margin-right:12%;
+   }
+
+   .f-link {
+    text-align: left;
+    width: 30%;
+   }
+
+   .f-link:hover  {
+     color: var(--STRONG-CYAN);
+   }
+
+   .socials {
+    width: 15%;
+    cursor: pointer;
+   }
+
+   .socials svg:hover path {
+    fill: var(--STRONG-CYAN) !important;
+   }
+   /* FEM footer*/
+
+   .attribution {
+    padding-bottom: 0;
+   }
+}
+
